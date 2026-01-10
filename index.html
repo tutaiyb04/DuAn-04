@@ -97,7 +97,7 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>Lucy</title>
   </head>
-  <body>
+  <body style="height: 10000px">
     <!-- Header -->
     <header class="header fixed">
       <div class="container">
@@ -111,7 +111,7 @@
           <nav class="header__nav">
             <ul class="header__list">
               <li class="header__item">
-                <a href="#!" class="header__link active">Home</a>
+                <a href="#" class="header__link active">Home</a>
               </li>
               <li class="header__item">
                 <a href="#!" class="header__link">About</a>
@@ -133,5 +133,110 @@
         </div>
       </div>
     </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero__inner">
+            <!-- Hero media -->
+            <div class="hero__media">
+              <!-- Hero image -->
+              <div class="hero__image">
+                <img src="./assets/img/cat.png" alt="Cat" class="hero__img" />
+                <img
+                  src="./assets/img/decor-1.svg"
+                  alt=""
+                  class="hero__decor-01"
+                />
+                <img
+                  src="./assets/img/decor-2.svg"
+                  alt=""
+                  class="hero__decor-02"
+                />
+              </div>
+              <div class="hero__image hero__image--small">
+                <img
+                  src="./assets/img/dog.png"
+                  alt="Dog"
+                  class="hero__img hero__img--small"
+                />
+              </div>
+
+              <!-- Hero list -->
+              <div class="hero__list">
+                <div class="hero-item">
+                  <div class="hero-item__img">
+                    <img
+                      src="./assets/img/dog-2.png"
+                      alt=""
+                      class="hero-item__thumb"
+                    />
+                  </div>
+                  <div class="hero-item__info">
+                    <p class="hero-item__title">Pet Health</p>
+                    <div class="hero-item__skeleton"></div>
+                    <div
+                      class="hero-item__skeleton hero-item__skeleton--short"
+                    ></div>
+                  </div>
+                </div>
+                <div class="hero-item__separate"></div>
+                <div class="hero-item">
+                  <div class="hero-item__img hero-item__img--color">
+                    <img
+                      src="./assets/img/dog-3.png"
+                      alt=""
+                      class="hero-item__thumb"
+                    />
+                  </div>
+                  <div class="hero-item__info">
+                    <p class="hero-item__title">Pet care</p>
+                    <div class="hero-item__skeleton"></div>
+                    <div
+                      class="hero-item__skeleton hero-item__skeleton--short"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hero content -->
+            <section class="hero__content">
+              <h1 class="hero__heading">
+                Established & Trusted Pet Care Service
+              </h1>
+              <p class="hero__desc">
+                Discover a wide variety of Pawsitive services to choose from,
+                including daycare, private walks, office duty and spa.
+              </p>
+              <div class="hero-cta">
+                <div class="hero-cta__btn">
+                  <a href="#!" class="hero-cta__btn-link"> Book a Meet </a>
+                  <span class="hero-cta__btn-icon">
+                    <svg
+                      class="hero-cta__btn-img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="4"
+                      height="6"
+                      viewBox="0 0 4 6"
+                      fill="none"
+                    >
+                      <path
+                        d="M0.5 0.5L3 3L0.5 5.5"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <a href="#!" class="hero-cta__link">Schedule a Call</a>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
