@@ -21,6 +21,7 @@ body {
   font-size: 1.6rem;
   background-color: #fffaf5;
   font-family: "Poppins", sans-serif;
+  -webkit-user-select: none;
 }
 
 /* ====Common==== */
@@ -49,6 +50,28 @@ button {
 
 a {
   text-decoration: none;
+}
+
+.section-titlw {
+  font-family: "Sora", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1; /* 100% */
+  color: #5e6085;
+}
+
+.section-heading {
+  font-family: "Sora", sans-serif;
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.19; /* 119.231% */
+  color: var(--heading-color);
+}
+
+.section-desc {
+  font-size: 1.6rem;
+  line-height: 1.88; /* 187.5% */
+  color: var(--paragraph-color);
 }
 
 /* ====Heaeder==== */
@@ -113,6 +136,7 @@ a {
 /* ====Hero==== */
 .hero {
   margin-top: 94px;
+  padding-bottom: 94px;
 }
 
 .hero__inner {
@@ -249,9 +273,6 @@ a {
 .hero__desc {
   width: 391px;
   margin-top: 24px;
-  font-size: 1.6rem;
-  line-height: 1.88; /* 187.5% */
-  color: var(--paragraph-color);
 }
 
 .hero-cta {
@@ -303,6 +324,7 @@ a {
 }
 
 .hero-cta__link {
+  padding: 8px 0;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1; /* 100% */
@@ -311,4 +333,197 @@ a {
 
 .hero-cta__link:hover {
   text-decoration-line: underline;
+}
+
+/* ====About==== */
+.about {
+  margin-top: 77px;
+  padding: 130px 0;
+}
+
+.about__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+/* avout content 1 */
+.about__heading {
+  margin-top: 15px;
+  width: 446px;
+}
+
+.about__desc {
+  margin-top: 24px;
+  width: 431px;
+}
+
+.about__checklist {
+  margin-top: 57px;
+  width: 477px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: flex-start;
+  column-gap: 36px;
+  row-gap: 40px;
+}
+
+.about__check-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1; /* 100% */
+  color: #48496a;
+}
+
+.about__check-item::before {
+  display: inline-block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background: #ff5d31;
+  box-shadow: 0 4px 15px -3px rgba(255, 93, 49, 0.69);
+}
+
+.about__check-item::after {
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  content: url(../img/tich.svg);
+}
+
+/* about media 1 */
+.about__media {
+  position: relative;
+}
+
+.about__card {
+  position: absolute;
+  padding: 31px 26px 29px;
+  width: 136px;
+  border-radius: 10px;
+  background: #5bd6e2;
+  box-shadow: -15px 26px 48px 0 rgba(85, 240, 255, 0.17);
+  text-align: center;
+  top: 83px;
+  left: 0;
+}
+
+.about__card-title {
+  font-family: "Sora", sans-serif;
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 1; /* 100% */
+  color: #fff;
+}
+
+.about__card-desc {
+  margin-top: 14px;
+  font-size: 1.4rem;
+  line-height: 1.43; /* 142.857% */
+  color: #c6f4f9;
+}
+
+.about__card-decor {
+  position: absolute;
+  top: -38px;
+  right: -31px;
+}
+
+/* about image */
+.about__image {
+  margin-left: auto;
+  position: relative;
+  width: 494px;
+}
+
+.about__image-decor {
+  position: absolute;
+  top: 150px;
+  right: -52px;
+}
+
+.about__image::after {
+  position: absolute;
+  inset: auto 0 0 0;
+  display: inline-block;
+  z-index: -1;
+  content: "";
+  width: 494px;
+  height: 336px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+  box-shadow: 11px 18px 65px 0 rgba(255, 155, 121, 0.12);
+}
+
+.about__img {
+  display: block;
+  margin: 0 auto;
+  width: 450px;
+}
+
+/* ====feature==== */
+.feature {
+  margin-top: 16px;
+  padding: 24px 0;
+}
+
+.feature__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Feature image */
+.feature__image {
+  position: relative;
+  width: 500px;
+}
+
+.feature__img {
+  width: 458px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 2px solid #fff;
+  background: linear-gradient(180deg, #c6e2fa 0%, #94c2ea 100%);
+  box-shadow: 0 17px 77px -8px rgba(190, 165, 139, 0.17);
+}
+
+.feature__vector-1 {
+  position: absolute;
+  top: 28.5px;
+  left: 388.73px;
+}
+
+.feature__vector-2 {
+  position: absolute;
+  top: 0;
+  right: 55px;
+}
+
+.feature__vector-3 {
+  position: absolute;
+  top: 49px;
+  right: 21px;
+}
+
+.feature__vector-4 {
+  position: absolute;
+  top: 284px;
+  empty-cells: 9px;
+}
+
+.feature__vector-5 {
+  position: absolute;
+  top: 352px;
+  right: 61px;
+}
+
+.feature__circiles {
+  display: block;
+  margin: -56px 0 0 auto;
 }
