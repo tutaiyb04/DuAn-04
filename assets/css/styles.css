@@ -52,7 +52,7 @@ a {
   text-decoration: none;
 }
 
-.section-titlw {
+.section-title {
   font-family: "Sora", sans-serif;
   font-size: 1.6rem;
   font-weight: 600;
@@ -620,4 +620,137 @@ a {
 .tab__content-more::after {
   opacity: 1;
   height: 1.5px;
+}
+
+/* ====service==== */
+.service {
+  margin-top: 106px;
+  padding: 68px 0 100px;
+  background: #fff6ed;
+}
+
+.service__top {
+  text-align: center;
+}
+
+.service__heading {
+  margin-top: 15px;
+}
+
+/* Service body */
+.service__body {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  margin-top: 71px;
+  column-gap: 65px;
+}
+
+/* Service column 1 */
+.service-item {
+  padding: 30px 28px;
+  width: 294px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 188, 122, 0.26);
+  background: #fff;
+}
+
+.service-item + .service-item {
+  margin-top: 24px;
+}
+.service-item__heading {
+  position: relative;
+  padding-left: 12px;
+}
+
+.service-item__heading-link {
+  font-family: "Sora", sans-serif;
+  padding: 8px 0;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1; /* 100% */
+  color: var(--heading-color);
+}
+
+.service-item__heading::before {
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  display: inline-block;
+  content: "";
+  width: 2px;
+  height: 22px;
+  border-radius: 1px;
+  background: linear-gradient(#ff5b2e, #ffa187);
+}
+
+.service-item__desc {
+  margin-top: 18px;
+  width: 244px;
+  font-size: 1.4rem;
+  line-height: 1.71; /* 171.429% */
+  color: var(--paragraph-color);
+}
+
+.service-item__cta {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.service-item__link {
+  margin-right: 6px;
+  font-family: "Sora", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1; /* 100% */
+  color: #34396a;
+}
+
+/* Service column 2 */
+.service__media {
+  position: relative;
+  margin-top: 18px;
+}
+
+.service__media::after {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 0;
+  display: inline-block;
+  content: "";
+  height: 350px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #9df1fb 0%, #73d0db 108.14%);
+}
+
+.service__img {
+  position: relative;
+  display: block;
+  width: 100%;
+  z-index: 1;
+}
+
+.service__cta-wrap {
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+}
+
+.service__cta {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  min-width: 214px;
+  height: 56px;
+  line-height: 56px; /* 100% */
+  text-align: center;
+  color: var(--primary-color);
+  border-radius: 31px;
+  border: 1px solid #ff5b2e;
+  background-color: transparent;
+}
+
+.service__cta:hover {
+  opacity: 0.6;
+  box-shadow: 0 13px 26px -8px rgba(255, 91, 46, 0.42);
 }
